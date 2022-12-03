@@ -1,0 +1,30 @@
+version: '3'
+services:
+    mongoProyect2:
+        image: mongo
+        ports:
+            - 27018:27017
+    
+    springclient:
+        build: ms-client
+        ports: 
+            - 8090:8080
+           
+    springproduct:
+        build: ms-product
+        ports: 
+            - 8091:8080
+            
+    springaccount:
+        build: ms-account
+        ports: 
+            - 8092:8080
+            
+    springcredit:
+        build: ms-credit
+        ports: 
+            - 8093:8080
+    springoperation:
+        build: ms-operation
+        ports: 
+            - 8094:8080
